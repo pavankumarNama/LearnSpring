@@ -1,0 +1,9 @@
+server:  port: 8084
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    generate-ddl: true    hibernate:      ddl-auto: update
+  datasource:    url: jdbc:mysql://localhost:3306/movie_catalog
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver  application:    name: movie-catalog
